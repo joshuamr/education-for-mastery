@@ -1,0 +1,86 @@
+@import "helpers/variables";
+
+#mainImage {
+    background-image:url('../images/adorable-blur-bookcase-books-261895\ \(1\).jpg');
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;;
+    background-position: center center;
+    padding: 10px 0px;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+  }
+  
+  .education-teaser__item {
+    font-family: $fontblock; 
+    display: inline-block;
+    color: $yellow;
+    max-width: 600px;
+    margin: 5px 20px;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center
+  }
+
+/* blue: rgb(20, 100, 255) */
+/* red: rgb(183, 5, 25) */
+
+  .header-card {
+    border-radius: 5px;
+    text-align: center;
+    font-size: 25px;
+  }
+
+.header-card h1 {
+    margin: 0
+}
+
+.card-line {
+    height: 2px;
+    margin-top: 3px;
+    width: 100%;
+    background-color: $blue
+}
+
+.tagline {
+    font-size: 50px;
+    color: $yellow;
+    text-align: center;
+    padding-bottom: 10px;
+    margin: auto;
+    background-color: $red;
+    box-shadow: 0px 0px 10px $red;
+    line-height: 50px;
+}
+
+@media (max-width: 1400px) {
+    .education-teaser__item {
+        max-width: 500px
+    }
+}
+
+@media (max-width: 1200px) {
+    .education-teaser__item {
+        max-width: 400px
+    }
+}
+
+@media (max-width: 1000px) {
+    .education-teaser__item {
+        max-width: 350px
+    }
+}
+
+@media (max-width: 500px) {
+    .tagline {
+        font-size: 35px;
+        line-height: 35px;
+        padding-top:10px;
+    }
+}
+

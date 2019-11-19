@@ -1,0 +1,90 @@
+.contact {
+  color: #b70519;
+  font-family: "Barlow Condensed", sans-serif;
+  text-align: center;
+}
+
+.contact__name {
+  font-size: 50px;
+  margin: 10px;
+}
+
+.contact__phone {
+  font-size: 40px;
+  margin: 10px;
+}
+
+.contact-input {
+  margin: 10px auto;
+  text-align: center;
+}
+.contact-input input {
+  height: 25px;
+}
+.contact-input input, .contact-input textarea {
+  width: 500px;
+  font-size: 20px;
+  color: #1464ff;
+  padding: 5px;
+  font-family: "Barlow Condensed", sans-serif;
+  border-radius: 5px;
+}
+
+.submit {
+  height: 30px;
+  font-size: 20px;
+  border-radius: 15px;
+  background-color: #14e1c5;
+  color: white;
+  cursor: pointer;
+}
+
+.submitButton {
+  width: 79px;
+  margin: 10px auto;
+}
+
+.feedback {
+  text-align: center;
+  color: #b70519;
+  font-size: 40px;
+}
+
+.successBox {
+  width: 500px;
+  font-size: 30px;
+  color: #ffaf1f;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.sendAnother {
+  color: #1464ff;
+  text-decoration: underline;
+  cursor: pointer;
+  margin: 30px auto;
+}
+
+.successField {
+  text-align: start;
+}
+
+.successMessage {
+  font-size: 35px;
+}
+
+.userInput {
+  margin-left: 10px;
+}
+
+@media (max-width: 500px) {
+  .contact-input input, .contact-input textarea {
+    width: 300px;
+  }
+
+  .successBox {
+    width: 300px;
+  }
+}
+
+/*# sourceMappingURL=contact.css.map */

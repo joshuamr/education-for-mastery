@@ -1,0 +1,40 @@
+{
+  "name": "education-for-mastery",
+  "version": "1.0.0",
+  "description": "Website for Education For Mastery",
+  "main": "app.js",
+  "engines" :{
+    "node":"8.12.0"
+  },
+  "scripts": {
+    "test": "echo \"No test specified!\" && exit 1",
+    "start": "app.js",
+    "compile:sass": "node-sass public/sass/main.scss public/sass/main.scss",
+    "start-server": "node app.js",
+    "start:dev":"nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshuamr/education-for-mastery.git"
+  },
+  "keywords": [
+    "Education"
+  ],
+  "author": "Joshua Meriyah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joshuamr/education-for-mastery/issues"
+  },
+  "homepage": "https://github.com/joshuamr/education-for-mastery#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.2.0",
+    "nodemailer": "^6.3.1",
+    "nodemon": "^1.19.4",
+    "pug": "^2.0.4"
+  },
+  "devDependencies": {
+    "node-sass": "^4.13.0"
+  }
+}

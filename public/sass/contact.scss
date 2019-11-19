@@ -1,0 +1,92 @@
+@import "helpers/variables";
+
+
+.contact {
+    color: $red;
+    font-family: $fontblock;
+    text-align: center;
+}
+
+.contact__name {
+    font-size: 50px;
+    margin: 10px
+}
+
+.contact__phone {
+    font-size: 40px;
+    margin: 10px; 
+}
+.contact-input {
+    margin: 10px auto;
+    text-align:center;
+    input {
+        height: 25px;
+    }
+    input, textarea {
+        width: $screenWidth;
+        font-size: 20px;
+        color: $blue;
+        padding: 5px;
+        font-family: $fontblock;
+        border-radius: 5px;
+    }
+}
+
+.submit {
+    height: 30px;
+    font-size: 20px;
+    border-radius: 15px;
+    background-color: $green;
+    color: white;
+    cursor:pointer;
+}
+
+.submitButton {
+    width: 79px;
+    margin: 10px auto;
+}
+
+.feedback {
+    text-align: center;
+    color: $red;
+    font-size: 40px;
+}
+
+.successBox {
+    width: $screenWidth;
+    font-size: 30px;
+    color: $yellow;
+    text-align: center;
+    margin: 0 auto
+}
+
+.sendAnother {
+    color: $blue;
+    text-decoration: underline;
+    cursor: pointer;
+    margin: 30px auto
+}
+
+.successField {
+    text-align: start;
+}
+
+.successMessage {
+    font-size: 35px
+}
+
+.userInput {
+    margin-left: 10px;
+}
+
+@media (max-width: 500px) {
+    $screenWidth: 300px;
+    .contact-input {
+        input, textarea{
+            width: $screenWidth
+        }
+    }
+    .successBox {
+        width: $screenWidth
+    }
+}

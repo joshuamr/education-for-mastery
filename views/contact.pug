@@ -1,0 +1,40 @@
+extends layouts/main-layout
+
+block styles
+    link(rel="stylesheet", href="/css/contact.css")
+
+block content
+    main
+        .contact
+            h1.contact__name Education For Mastery
+            h2.contact__phone (410) 299-9921
+        if !emailSent
+            form.contact__form(method="POST" action = "/contact" id = 'contactForm')
+                .contact__enterName.contact-input
+                    input(type="text", name = "name" id = "name" placeholder = "Name" value = name)
+                .contact__email.contact-input
+                    input(type="text", name = "email" id = "email" placeholder = "Email" value = email)
+                .contact__subject.contact-input
+                    input(type="text", name = "subject" id = "subject" placeholder = "Subject" value = subject)
+                .contact__message.contact-input
+                    textarea(name="message", cols="30", rows="10" id = "message" placeholder = "Message" ) #{message}
+                .submitButton
+                    button.submit(type = 'submit' id = 'submit') Submit
+        else
+            .successBox
+                .successMessage Your email has been sent!
+                .successField 
+                    span.underline Name:
+                    span.userInput #{name}
+                .successField 
+                    span.underline Email:
+                    span.userInput #{email}
+                .successField 
+                    span.underline Subject:
+                    span.userInput #{subject}
+                .successField 
+                    span.underline Message:
+                    span.userInput #{message}
+                .sendAnother Click here to send another email.
+        .feedback #{feedback}
+        script(src = 'js/contact.js')

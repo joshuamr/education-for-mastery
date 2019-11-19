@@ -1,0 +1,105 @@
+.main-header {
+  width: 100%;
+  background: linear-gradient(90deg, #ffaf1f 0%, white 100%);
+  box-shadow: 0px 2px 4px #ffaf1f;
+  margin-bottom: 4px;
+  display: flex;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+body {
+  font-family: "Shadows Into Light", cursive;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.main-header__nav {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-header__logo {
+  width: 250px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.main-header__item-list {
+  justify-content: flex-end;
+}
+
+.main-header__item {
+  display: inline-flex;
+  list-style: none;
+  font-size: 30px;
+  margin: 0 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #1464ff;
+}
+
+.main-footer {
+  width: 100%;
+  background: #ffaf1f;
+  background: radial-gradient(circle, white 0%, #ffaf1f 96%);
+  font-family: "Barlow Condensed", sans-serif;
+  padding: 20px 0;
+  color: #b70519;
+  border-radius: 15px;
+}
+.main-footer a {
+  color: #b70519;
+  font-size: 25px;
+}
+.main-footer ul {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+/* rgba(255,175,31,1)
+rgba(20,100,255) */
+.main-footer__name {
+  font-size: 50px;
+  font-family: "Barlow Condensed", sans-serif;
+  text-align: center;
+}
+
+.main-footer__phone {
+  font-size: 30px;
+}
+
+.more-info {
+  font-style: italic;
+  font-size: 30px;
+}
+
+@media screen and (max-width: 550px) {
+  .main-header__logo {
+    width: 150px;
+  }
+
+  .main-header a {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .main-header ul {
+    width: 90px;
+    margin: 10px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,58 @@
+.wrapper {
+  width: 80%;
+  margin: 50px auto;
+}
+
+#profilePic {
+  height: 200px;
+  width: 192px;
+  margin: 10px 0 0 20px;
+}
+
+.picWrapper {
+  float: right;
+}
+
+.title {
+  font-size: 35px;
+  color: #b70519;
+}
+
+.about-paragraph {
+  margin: 10px 5px;
+}
+
+.about-paragraph, .about-span {
+  font-size: 25px;
+  color: #1464ff;
+}
+
+.about-span1 {
+  margin: 0 5px 0 0;
+}
+
+.about-span {
+  margin: 0 5px;
+}
+
+@media (max-width: 500px) {
+  .picWrapper {
+    float: none;
+    width: 200px;
+    margin: 10px auto;
+  }
+
+  #profilePic {
+    margin: 0 auto;
+  }
+
+  .about-paragraph, .about-span {
+    font-size: 20px;
+  }
+
+  .title {
+    font-size: 25px;
+  }
+}
+
+/*# sourceMappingURL=about.css.map */

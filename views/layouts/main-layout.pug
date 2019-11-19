@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title #{pageTitle}
+        link(rel="stylesheet", href="/css/main.css")
+        link(href="https://fonts.googleapis.com/css?family=Barlow+Condensed:400,400i|Shadows+Into+Light&display=swap" rel="stylesheet")
+        block styles
+    body
+        header.main-header
+            nav.main-header__nav 
+                img.main-header__logo(src= "images/logo.png")
+                include ./nav.pug
+        block content
+        footer.main-footer
+            .main-footer__name Education For Mastery
+                .more-info Teaching and Tutoring for Greater Baltimore
+                .main-footer__phone 410-299-9921
+            include ./nav.pug
+        script(src = "/js/main.js")
