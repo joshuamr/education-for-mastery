@@ -6,8 +6,6 @@ const { body } = require('express-validator')
 
 const controllers = require('../controllers/controllers')
 
-router.get('/', controllers.getIndex)
-
 router.get('/contact', controllers.getContact)
 
 router.post('/contact', [
@@ -18,5 +16,8 @@ router.post('/contact', [
 ], controllers.postEmail)
 
 router.get('/about', controllers.getAbout)
+
+
+router.use(controllers.getIndex)
 
 module.exports = router

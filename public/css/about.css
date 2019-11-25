@@ -1,12 +1,18 @@
 .wrapper {
   width: 80%;
-  margin: 50px auto;
+  padding: 50px 0;
+  margin: 0 auto;
+  font-family: "Shadows Into Light", cursive;
+}
+
+body {
+  background: rgba(255, 175, 31, 0.1);
 }
 
 #profilePic {
-  height: 200px;
-  width: 192px;
-  margin: 10px 0 0 20px;
+  height: 240px;
+  width: 230.4px;
+  margin: 40px 0 0 20px;
 }
 
 .picWrapper {
@@ -24,7 +30,7 @@
 
 .about-paragraph, .about-span {
   font-size: 25px;
-  color: #1464ff;
+  color: #1462ff;
 }
 
 .about-span1 {
@@ -38,7 +44,7 @@
 @media (max-width: 500px) {
   .picWrapper {
     float: none;
-    width: 200px;
+    width: 240px;
     margin: 10px auto;
   }
 

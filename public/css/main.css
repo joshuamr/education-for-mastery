@@ -7,6 +7,10 @@
   font-family: "Barlow Condensed", sans-serif;
 }
 
+.main-heading {
+  font-family: "Comfortaa", cursive;
+}
+
 body {
   font-family: "Shadows Into Light", cursive;
 }
@@ -28,9 +32,10 @@ body {
 }
 
 .main-header__logo {
-  width: 250px;
+  width: 100px;
   object-fit: contain;
   cursor: pointer;
+  margin: 10px;
 }
 
 .main-header__item-list {
@@ -46,7 +51,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #1464ff;
+  color: #1462ff;
 }
 
 .main-footer {
@@ -88,7 +93,7 @@ rgba(20,100,255) */
 
 @media screen and (max-width: 550px) {
   .main-header__logo {
-    width: 150px;
+    width: 60px;
   }
 
   .main-header a {

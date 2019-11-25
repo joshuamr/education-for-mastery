@@ -2,13 +2,19 @@
 
 .wrapper{
     width: 80%;
-    margin: 50px auto;
+    padding: 50px 0;
+    margin: 0 auto;
+    font-family: $fontscript
+}
+
+body{
+    background: $lightyellow
 }
 
 #profilePic {
-    height: 200px;
-    width: 192px;
-    margin: 10px 0 0 20px;
+    height: 300px * 0.8;
+    width: 288px * 0.8;
+    margin: 40px 0 0 20px;
 }
 
 .picWrapper {
@@ -17,7 +23,7 @@
 
 .title{
     font-size: 35px;
-    color: $red
+    color: $red;
 }
 
 .about-paragraph {
@@ -43,7 +49,7 @@
 @media (max-width: 500px) {
     .picWrapper {
         float: none;
-        width: 200px;
+        width: 300px * 0.8;
         margin: 10px auto
     }
     #profilePic {

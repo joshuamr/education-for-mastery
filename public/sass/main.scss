@@ -10,7 +10,7 @@
 }
 
 body {
-    font-family: $fontscript
+    font-family: $fontscript;
 }
 
 .bold {
@@ -30,9 +30,10 @@ body {
 }
 
 .main-header__logo{
-    width: 250px;
+    width: 100px;
     object-fit: contain;
     cursor: pointer;
+    margin:10px;
 }
 
 .main-header__item-list {
@@ -90,7 +91,7 @@ rgba(20,100,255) */
 
 @media screen and (max-width: 550px) {
     .main-header__logo{
-        width: 150px;
+        width: 60px;
     }
     .main-header a {
         font-size: 22px;

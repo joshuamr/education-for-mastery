@@ -1,5 +1,7 @@
 let image = document.getElementById('mainImage')
 let logo = document.querySelector('.main-header__logo')
+// import '../sass/main.scss'
+// import '../sass/home.scss'
 
 let setImageWidth = () =>{
     let windowInnerWidth = window.innerWidth
