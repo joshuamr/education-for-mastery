@@ -7,10 +7,6 @@
   font-family: "Barlow Condensed", sans-serif;
 }
 
-.main-heading {
-  font-family: "Comfortaa", cursive;
-}
-
 body {
   font-family: "Shadows Into Light", cursive;
 }
@@ -32,7 +28,7 @@ body {
 }
 
 .main-header__logo {
-  width: 100px;
+  width: 80px;
   object-fit: contain;
   cursor: pointer;
   margin: 10px;

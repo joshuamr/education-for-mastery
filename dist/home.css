@@ -1,0 +1,153 @@
+.main-header {
+  width: 100%;
+  background: linear-gradient(90deg, #ffaf1f 0%, white 100%);
+  box-shadow: 0px 2px 4px #ffaf1f;
+  margin-bottom: 4px;
+  display: flex;
+  font-family: "Barlow Condensed", sans-serif; }
+
+body {
+  font-family: "Shadows Into Light", cursive; }
+
+.bold {
+  font-weight: bold; }
+
+.underline {
+  text-decoration: underline; }
+
+.main-header__nav {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: space-between; }
+
+.main-header__logo {
+  width: 100px;
+  object-fit: contain;
+  cursor: pointer;
+  margin: 10px; }
+
+.main-header__item-list {
+  justify-content: flex-end; }
+
+.main-header__item {
+  display: inline-flex;
+  list-style: none;
+  font-size: 30px;
+  margin: 0 20px; }
+
+a {
+  text-decoration: none;
+  color: #1462ff; }
+
+.main-footer {
+  width: 100%;
+  background: #ffaf1f;
+  background: radial-gradient(circle, white 0%, #ffaf1f 96%);
+  font-family: "Barlow Condensed", sans-serif;
+  padding: 20px 0;
+  color: #b70519;
+  border-radius: 15px; }
+  .main-footer a {
+    color: #b70519;
+    font-size: 25px; }
+  .main-footer ul {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding: 0; }
+
+/* rgba(255,175,31,1)
+rgba(20,100,255) */
+.main-footer__name {
+  font-size: 50px;
+  font-family: "Barlow Condensed", sans-serif;
+  text-align: center; }
+
+.main-footer__phone {
+  font-size: 30px; }
+
+.more-info {
+  font-style: italic;
+  font-size: 30px; }
+
+@media screen and (max-width: 550px) {
+  .main-header__logo {
+    width: 60px; }
+  .main-header a {
+    font-size: 22px; } }
+
+@media screen and (max-width: 400px) {
+  .main-header ul {
+    width: 90px;
+    margin: 10px; } }
+
+#mainImage {
+  background-image: url("images/adorable-blur-bookcase-books-261895 (1).jpg");
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 10px 0px; }
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch; }
+
+.education-teaser__item {
+  font-family: "Barlow Condensed", sans-serif;
+  display: inline-block;
+  color: #ffaf1f;
+  max-width: 600px;
+  margin: 5px 20px;
+  padding: 10px;
+  border-radius: 15px;
+  text-align: center; }
+
+/* blue: rgb(20, 100, 255) */
+/* red: rgb(183, 5, 25) */
+.header-card {
+  border-radius: 5px;
+  text-align: center;
+  font-size: 25px; }
+
+.header-card h1 {
+  margin: 0; }
+
+.card-line {
+  height: 2px;
+  margin-top: 3px;
+  width: 100%;
+  background-color: #1462ff; }
+
+.tagline {
+  font-size: 50px;
+  color: #ffaf1f;
+  text-align: center;
+  padding-bottom: 10px;
+  margin: auto;
+  background-color: #b70519;
+  box-shadow: 0px 0px 10px #b70519;
+  line-height: 50px; }
+
+@media (max-width: 1400px) {
+  .education-teaser__item {
+    max-width: 500px; } }
+
+@media (max-width: 1200px) {
+  .education-teaser__item {
+    max-width: 400px; } }
+
+@media (max-width: 1000px) {
+  .education-teaser__item {
+    max-width: 350px; } }
+
+@media (max-width: 500px) {
+  .tagline {
+    font-size: 35px;
+    line-height: 35px;
+    padding-top: 10px; } }
+

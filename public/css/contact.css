@@ -24,7 +24,7 @@
 .contact-input input, .contact-input textarea {
   width: 500px;
   font-size: 20px;
-  color: #1464ff;
+  color: #1462ff;
   padding: 5px;
   font-family: "Barlow Condensed", sans-serif;
   border-radius: 5px;
@@ -59,7 +59,7 @@
 }
 
 .sendAnother {
-  color: #1464ff;
+  color: #1462ff;
   text-decoration: underline;
   cursor: pointer;
   margin: 30px auto;

@@ -1,0 +1,114 @@
+.wrapper {
+  width: 80%;
+  padding: 50px 0;
+  margin: 0 auto;
+  font-family: "Shadows Into Light", cursive; }
+
+body {
+  background: rgba(255, 175, 31, 0.1); }
+
+#profilePic {
+  height: 240px;
+  width: 230.4px;
+  margin: 40px 0 0 20px; }
+
+.picWrapper {
+  float: right; }
+
+.title {
+  font-size: 35px;
+  color: #b70519; }
+
+.about-paragraph {
+  margin: 10px 5px; }
+
+.about-paragraph, .about-span {
+  font-size: 25px;
+  color: #1462ff; }
+
+.about-span1 {
+  margin: 0 5px 0 0; }
+
+.about-span {
+  margin: 0 5px; }
+
+@media (max-width: 500px) {
+  .picWrapper {
+    float: none;
+    width: 240px;
+    margin: 10px auto; }
+  #profilePic {
+    margin: 0 auto; }
+  .about-paragraph, .about-span {
+    font-size: 20px; }
+  .title {
+    font-size: 25px; } }
+
+#mainImage {
+  background-image: url("images/adorable-blur-bookcase-books-261895 (1).jpg");
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 10px 0px; }
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch; }
+
+.education-teaser__item {
+  font-family: "Barlow Condensed", sans-serif;
+  display: inline-block;
+  color: #ffaf1f;
+  max-width: 600px;
+  margin: 5px 20px;
+  padding: 10px;
+  border-radius: 15px;
+  text-align: center; }
+
+/* blue: rgb(20, 100, 255) */
+/* red: rgb(183, 5, 25) */
+.header-card {
+  border-radius: 5px;
+  text-align: center;
+  font-size: 25px; }
+
+.header-card h1 {
+  margin: 0; }
+
+.card-line {
+  height: 2px;
+  margin-top: 3px;
+  width: 100%;
+  background-color: #1462ff; }
+
+.tagline {
+  font-size: 50px;
+  color: #ffaf1f;
+  text-align: center;
+  padding-bottom: 10px;
+  margin: auto;
+  background-color: #b70519;
+  box-shadow: 0px 0px 10px #b70519;
+  line-height: 50px; }
+
+@media (max-width: 1400px) {
+  .education-teaser__item {
+    max-width: 500px; } }
+
+@media (max-width: 1200px) {
+  .education-teaser__item {
+    max-width: 400px; } }
+
+@media (max-width: 1000px) {
+  .education-teaser__item {
+    max-width: 350px; } }
+
+@media (max-width: 500px) {
+  .tagline {
+    font-size: 35px;
+    line-height: 35px;
+    padding-top: 10px; } }
+
