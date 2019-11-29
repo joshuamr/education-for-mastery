@@ -17,7 +17,7 @@ const transporter = nodemailer.createTransport({
 })
 
 let items = [
-    {title: 'Experience', text: 'With over 10 years experience teaching and tutoring in classrooms and homes, we can support your child to understand and master curriculum.'},
+    {title: 'Experience', text: 'With over 20 years experience teaching and tutoring in classrooms and homes, we can support your child to understand and master curriculum.'},
     {title: 'Philosophy', text: 'We believe in the innate genius of every child.  Given the right support and materials, your child can learn and thrive.'}
 ]
 
