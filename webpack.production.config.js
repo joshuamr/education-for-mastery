@@ -15,9 +15,10 @@ module.exports = {
     },
     output: {
         path: path.join(__dirname, 'dist'),
-        filename: '[name].js',
-        publicPath: '/'
+        filename: '[name].[contenthash].js',
+        publicPath: '/static'
     },
+    mode: 'production',
     module: {
         rules: [
             {
@@ -85,8 +86,7 @@ module.exports = {
     
     plugins: [
       new MiniCssExtractPlugin({
-        filename: '[name].css',
-        chunkFilename: '[id].css'
+        filename: '[name].[contenthash].css',
       }),
       new HtmlWebpackPlugin({
           filename: 'views/home.pug',
@@ -96,6 +96,7 @@ module.exports = {
       new HtmlWebpackPlugin({
             filename: 'views/contact.pug',
             template: 'views/contact.pug',
+            description: 'Contact Education 4 Mastery',
             chunks: ['contact']
         }),
         new HtmlWebpackPlugin({
@@ -103,6 +104,7 @@ module.exports = {
             template: 'views/about.pug',
             chunks: ['about']
         }),
-        // new HtmlWebpackPugPlugin(),
+        new HtmlWebpackPugPlugin(),
+        new CleanWebpackPlugin(),
     ],
 }

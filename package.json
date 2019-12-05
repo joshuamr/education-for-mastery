@@ -10,8 +10,7 @@
     "test": "echo \"No test specified!\" && exit 1",
     "start": "node app.js",
     "compile:sass": "node-sass public/sass/main.scss public/sass/main.scss",
-    "build": "webpack-dev-server",
-    "build:prod": "rm -rf dist && webpack --mode development --config webpack.server.config.js && webpack --mode development",
+    "build": "webpack --config webpack.production.config.js",
     "start-server": "node app.js",
     "start:dev": "nodemon app.js"
   },

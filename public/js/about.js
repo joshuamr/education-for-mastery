@@ -1,4 +1,4 @@
 
-// import '../sass/about.scss'
-// import '../sass/home.scss'
-// import '../images/head-shot.JPG'
+import '../sass/about.scss'
+import '../sass/home.scss'
+import '../images/head-shot.JPG'
