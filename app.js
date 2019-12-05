@@ -22,5 +22,6 @@ app.use('/static', express.static(path.resolve(__dirname, './dist')))
 
 app.use(routes)
 
+console.log('hello')
 
 app.listen( process.env.port || 3000) 
