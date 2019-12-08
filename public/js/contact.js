@@ -9,8 +9,6 @@ let contactForm = document.getElementById('contactForm')
 let feedback = document.querySelector('.feedback')
 
 
-import '../sass/main.scss'
-import '../sass/contact.scss'
 
 if (submit) {
     submit.disabled = true

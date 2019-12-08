@@ -35,9 +35,6 @@ module.exports = {
                 use: [
                     {
                         loader: MiniCssExtractPlugin.loader,
-                        options: {
-                            hmr: process.env.NODE_ENV === 'development',
-                        },
                     },
                     'css-loader', 
                     'sass-loader'
@@ -89,22 +86,21 @@ module.exports = {
         filename: '[name].[contenthash].css',
       }),
       new HtmlWebpackPlugin({
-          filename: 'views/home.pug',
+          filename: 'views/home.html',
           template: 'views/home.pug',
           chunks: ['home']
       }),
       new HtmlWebpackPlugin({
-            filename: 'views/contact.pug',
+            filename: 'views/contact.html',
             template: 'views/contact.pug',
             description: 'Contact Education 4 Mastery',
             chunks: ['contact']
         }),
         new HtmlWebpackPlugin({
-            filename: 'views/about.pug',
+            filename: 'views/about.html',
             template: 'views/about.pug',
             chunks: ['about']
         }),
-        new HtmlWebpackPugPlugin(),
         new CleanWebpackPlugin(),
     ],
 }
