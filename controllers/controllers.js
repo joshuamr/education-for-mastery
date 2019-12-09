@@ -2,12 +2,13 @@ const { validationResult } = require('express-validator')
 
 const nodemailer = require('nodemailer')
 
-const fromEmail = 'joshua@mathfactsmastery.com'
+const fromEmail = process.env.FROM__EMAIL
 const fromPass = process.env.FROM__PASS
+const host = process.env.HOST
 
 const transporter = nodemailer.createTransport({
-    host: 'mail.mathfactsmastery.com',
-    name: 'mail.mathfactsmastery.com',
+    host,
+    name: host,
     port: 465,
     secure: true,
     auth: {

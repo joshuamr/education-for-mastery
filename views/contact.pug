@@ -35,6 +35,6 @@ block content
                 .successField 
                     span.underline Message:
                     span.userInput #{message}
-                .sendAnother Click here to send another email.
+                a(href= '/contact').sendAnother Click here to send another email.
         .feedback #{feedback}
         script(src = 'js/contact.js')

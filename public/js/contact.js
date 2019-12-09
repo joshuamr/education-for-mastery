@@ -5,8 +5,9 @@ let name = document.getElementById('name')
 let subject = document.getElementById('subject')
 let message = document.getElementById('message')
 let contactForm = document.getElementById('contactForm')
-
+let successBox = document.querySelector('.successBox')
 let feedback = document.querySelector('.feedback')
+let sendAnother = document.querySelector('.sendAnother')
 
 
 
@@ -29,7 +30,7 @@ function inputValue (e) {
         feedback.innerText = null
     }
     if (readyToSubmit()) {
-        submit.style.backgroundColor = "rgb(20, 225, 197)"
+        submit.style.backgroundColor = "rgb(20, 100, 255)"
         submit.disabled = false
     } else if (submit.style.backgroundColor !== 'lightgray') submit.style.backgroundColor = 'lightgray'
 }
